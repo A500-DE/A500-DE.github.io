@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arjun Gupta | Computer Science Student & Developer Portfolio</title>
+  
+  <!-- Meta Descriptions for SEO and GitHub Sharing -->
+  <meta name="description" content="Portfolio of Arjun Gupta - First-Year BSc Computer Science student at Bhavans College, Mumbai. Aspiring Software Developer exploring Python, Web Development, Flask, and AI automation.">
+  <meta name="keywords" content="Arjun Gupta, Developer Portfolio, Computer Science, Mumbai, Python, Flask, HTML, CSS, Web Development, AI Shorts Generator, Bhavans College">
+  <meta name="author" content="Arjun Gupta">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. NAVIGATION BAR
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-badge">AG</span>
+        <span>Arjun<span class="gradient-text">.dev</span></span>
+      </a>
+
+      <!-- Desktop Navlinks -->
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#roadmap" class="nav-link">Roadmap</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Theme Switcher & CTA) -->
+      <div class="nav-actions">
+        <button class="theme-btn" id="theme-toggle" aria-label="Toggle Dark / Light Theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="nav-cta">
+          <i class="fa-regular fa-paper-plane"></i>
+          <span>Let's Talk</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         2. HERO SECTION
+         ====================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <!-- Status Badges -->
+          <div class="hero-badge-container">
+            <span class="status-pill">
+              <span class="pulse-dot"></span>
+              Open to Internship Opportunities
+            </span>
+            <span class="location-pill">
+              <i class="fa-solid fa-location-dot"></i>
+              Mumbai, India
+            </span>
+          </div>
+
+          <h2 class="hero-greeting">Hi there, I am</h2>
+          <h1 class="hero-name">Arjun <span class="gradient-text">Gupta</span></h1>
+
+          <!-- Typewriter Effect -->
+          <div class="typewriter-wrapper">
+            <span>&gt; </span>
+            <span class="typing-text" id="typing-text"></span>
+          </div>
+
+          <p class="hero-bio">
+            First-Year <strong>BSc Computer Science student</strong> at Bhavans College, Mumbai. An aspiring software developer driven by curiosity, hands-on experimentation, and practical problem solving across <strong>Python, Web Technologies, and Backend Development</strong>.
+          </p>
+
+          <!-- Call to actions -->
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-code"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-regular fa-envelope"></i> Contact Me
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <div class="social-links">
+              <a href="https://github.com/A500-DE" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/arjun-gupta-72345241b/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:arjunkgupta277@gmail.com" class="social-icon-btn" title="Send Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual (Interactive Code Card) -->
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="code-card-header">
+              <div class="window-controls">
+                <span class="win-dot red"></span>
+                <span class="win-dot yellow"></span>
+                <span class="win-dot green"></span>
+              </div>
+              <span class="window-title">developer_profile.py</span>
+              <span><i class="fa-brands fa-python c-yellow"></i></span>
+            </div>
+            <div class="code-card-body">
+              <span class="code-line"><span class="c-purple">class</span> <span class="c-yellow">Developer</span>:</span>
+              <span class="code-line">&nbsp;&nbsp;<span class="c-purple">def</span> <span class="c-blue">__init__</span>(<span class="c-cyan">self</span>):</span>
+              <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-cyan">self</span>.name = <span class="c-green">"Arjun Gupta"</span></span>
+              <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-cyan">self</span>.college = <span class="c-green">"Bhavans College, Mumbai"</span></span>
+              <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-cyan">self</span>.status = <span class="c-green">"BSc CS (1st Year Completed)"</span></span>
+              <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-cyan">self</span>.interests = [<span class="c-green">"Web Dev"</span>, <span class="c-green">"Python"</span>, <span class="c-green">"AI"</span>]</span>
+              <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-cyan">self</span>.ready_for_work = <span class="c-purple">True</span></span>
+              <span class="code-line"><br></span>
+              <span class="code-line">&nbsp;&nbsp;<span class="c-purple">def</span> <span class="c-blue">motto</span>(<span class="c-cyan">self</span>):</span>
+              <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-purple">return</span> <span class="c-green">"Learn continuously, build practically"</span></span>
+              <span class="code-line"><br></span>
+              <span class="code-line"><span class="c-gray"># Initializing builder mindset</span></span>
+              <span class="code-line">dev = <span class="c-yellow">Developer</span>()</span>
+              <span class="code-line"><span class="c-blue">print</span>(dev.motto())</span>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="stat-pill-floating top-right">
+            <i class="fa-solid fa-graduation-cap stat-icon"></i>
+            <div class="stat-content">
+              <div class="stat-number">90.5% SSC</div>
+              <div class="stat-desc">Academic Dedication</div>
+            </div>
+          </div>
+
+          <div class="stat-pill-floating bottom-left">
+            <i class="fa-solid fa-code-branch stat-icon"></i>
+            <div class="stat-content">
+              <div class="stat-number">10+ Practice Projects</div>
+              <div class="stat-desc">Continuous Building</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. PHILOSOPHY & INSPIRATION BANNER
+         ====================================================================== -->
+    <section class="philosophy-section">
+      <div class="container">
+        <div class="philosophy-card">
+          <div class="philosophy-icon">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+          <div>
+            <h3 class="philosophy-quote">
+              "Learn continuously, build practically and improve consistently."
+            </h3>
+            <div class="philosophy-sub">
+              <span>Personal Philosophy &mdash; Arjun Gupta</span>
+              <span class="philosophy-badge">
+                <i class="fa-solid fa-fire"></i> Inspired by Dr. A.P.J. Abdul Kalam
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. ABOUT ME (4 PERSPECTIVES)
+         ====================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-regular fa-user"></i> Who I Am</span>
+          <h2 class="section-title">A Multi-Dimensional Look At My Journey</h2>
+          <p class="section-desc">
+            I am at the beginning of my professional tech career, viewing every assignment, bug, and line of code as a launchpad for growth.
+          </p>
+        </div>
+
+        <div class="about-cards-grid">
+          <!-- Card 1: The Developer Mindset -->
+          <div class="about-card">
+            <div class="about-card-icon-wrap">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3 class="about-card-title">The Aspiring Developer</h3>
+            <p class="about-card-text">
+              Passionate about programming, software engineering, and building real-world practical tools. I love exploring new technologies, experimenting with ideas, and turning theoretical concepts into functional code.
+            </p>
+            <div class="about-card-footer">
+              <i class="fa-solid fa-check-circle"></i> Practical Implementation First
+            </div>
+          </div>
+
+          <!-- Card 2: The Learning Evolution -->
+          <div class="about-card">
+            <div class="about-card-icon-wrap">
+              <i class="fa-solid fa-route"></i>
+            </div>
+            <h3 class="about-card-title">My Learning Path</h3>
+            <p class="about-card-text">
+              My journey started with Python & C++, developing programming journals, practical assignments, small games, and problem-solving exercises. I explored data science using Python & R, and built ~10 HTML practice projects.
+            </p>
+            <div class="about-card-footer">
+              <i class="fa-solid fa-check-circle"></i> From Basics to Full-Stack
+            </div>
+          </div>
+
+          <!-- Card 3: Career Objective -->
+          <div class="about-card">
+            <div class="about-card-icon-wrap">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h3 class="about-card-title">Internship Aspirations</h3>
+            <p class="about-card-text">
+              Currently seeking an internship opportunity in software development or web development to apply my fundamentals, gain real-world industry exposure, improve technical capabilities, and learn from experienced developers.
+            </p>
+            <div class="about-card-footer">
+              <i class="fa-solid fa-check-circle"></i> Ready to Contribute & Learn
+            </div>
+          </div>
+
+          <!-- Card 4: Values & Ethics -->
+          <div class="about-card">
+            <div class="about-card-icon-wrap">
+              <i class="fa-solid fa-compass"></i>
+            </div>
+            <h3 class="about-card-title">Mindset & Core Values</h3>
+            <p class="about-card-text">
+              Rooted in Universal Human Values (UHV) and Indian Knowledge Systems (IKS). Inspired by the life of Dr. A.P.J. Abdul Kalam, I believe in discipline, scientific curiosity, empathy, and taking full ownership of my growth.
+            </p>
+            <div class="about-card-footer">
+              <i class="fa-solid fa-check-circle"></i> Continuous Improvement
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. TECHNICAL SKILLS ARSENAL
+         ====================================================================== -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-microchip"></i> Technical Arsenal</span>
+          <h2 class="section-title">Skills & Learning Horizon</h2>
+          <p class="section-desc">
+            A transparent overview of the languages, frameworks, and tools I have practiced, am actively refining, or am learning next.
+          </p>
+        </div>
+
+        <!-- Legend -->
+        <div class="skills-legend">
+          <div class="legend-item">
+            <span class="legend-dot core"></span>
+            <span>Core / Practiced</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot learning"></span>
+            <span>Active Learning & Exploration</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot upcoming"></span>
+            <span>Upcoming Academic Focus</span>
+          </div>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          <!-- Category 1: Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-code category-icon"></i>
+              <h3 class="category-title">Programming</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-top">
+                  <span class="skill-name-wrap"><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="skill-badge core">Practiced</span>
+                </div>
+                <p class="skill-notes">Fundamentals, journal exercises, problem solving, logic building & small games.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-top">
+                  <span class="skill-name-wrap"><i class="fa-solid fa-file-code"></i> C++</span>
+                  <span class="skill-badge core">Practiced</span>
+                </div>
+                <p class="skill-notes">Foundational programming concepts, academic practicals & memory models.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-top">
+                  <span class="skill-name-wrap"><i class="fa-solid fa-chart-line"></i> R Language</span>
+                  <span class="skill-badge learning">Introductory</span>
+                </div>
+                <p class="skill-notes">Statistical computing and introductory data science exploration.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Web Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-globe category-icon"></i>
+              <h3 class="category-title">Web Development</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-top">
+                  <span class="skill-name-wrap"><i class="fa-brands fa-html5"></i> HTML5</span>
+                  <span class="skill-badge core">Practiced</span>
+                </div>
+                <p class="skill-notes">Semantic markup, accessibility, structures across ~10 practice projects.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-top">
+                  <span class="skill-name-wrap"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                  <span class="skill-badge core">Practiced</span>
+                </div>
+                <p class="skill-notes">Responsive layouts, Flexbox, Grid, custom styling, animations & theming.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-top">
+                  <span class="skill-name-wrap"><i class="fa-solid fa-pepper-hot"></i> Flask</span>
+                  <span class="skill-badge learning">Exploring</span>
+                </div>
+                <p class="skill-notes">Python-based backend routing, Jinja2 templating, sessions, database hooks.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-top">
+                  <span class="skill-name-wrap"><i class="fa-brands fa-js"></i> JavaScript</span>
+                  <span class="skill-badge upcoming">Learning Focus</span>
+                </div>
+                <p class="skill-notes">DOM manipulation, event handling, asynchronous fetching, and web interactivity.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Database & Analytics -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-database category-icon"></i>
+              <h3 class="category-title">Data & Databases</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-top">
+                  <span class="skill-name-wrap"><i class="fa-solid fa-server"></i> SQLite</span>
+                  <span class="skill-badge core">Practiced</span>
+                </div>
+                <p class="skill-notes">Practical database schema creation and integration in Python applications.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-top">
+                  <span class="skill-name-wrap"><i class="fa-solid fa-brain"></i> Data Science</span>
+                  <span class="skill-badge learning">Exploring</span>
+                </div>
+                <p class="skill-notes">Introductory analytical exploration using Python libraries and R scripts.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-top">
+                  <span class="skill-name-wrap"><i class="fa-solid fa-table"></i> SQL</span>
+                  <span class="skill-badge upcoming">Upcoming</span>
+                </div>
+                <p class="skill-notes">Relational queries, joins, constraints (academic syllabus focus).</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-top">
+                  <span class="skill-name-wrap"><i class="fa-solid fa-file-excel"></i> MS Excel</span>
+                  <span class="skill-badge core">Practiced</span>
+                </div>
+                <p class="skill-notes">Data organization and formulas; working on advancing analytics features.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Workflow -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-screwdriver-wrench category-icon"></i>
+              <h3 class="category-title">Tools & Workflow</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-top">
+                  <span class="skill-name-wrap"><i class="fa-solid fa-code-compare"></i> VS Code</span>
+                  <span class="skill-badge core">Daily Driver</span>
+                </div>
+                <p class="skill-notes">Primary IDE, extensions, code formatting, debugging, workspace setup.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-top">
+                  <span class="skill-name-wrap"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                  <span class="skill-badge learning">Improving</span>
+                </div>
+                <p class="skill-notes">Version control, repository management, commits, branches, GitHub workflows.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-top">
+                  <span class="skill-name-wrap"><i class="fa-solid fa-terminal"></i> Command-Line</span>
+                  <span class="skill-badge core">Practiced</span>
+                </div>
+                <p class="skill-notes">Basic CLI commands, navigation, scripts execution, and file management.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. PROJECTS & PRACTICAL WORK
+         ====================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-cubes"></i> Portfolio Works</span>
+          <h2 class="section-title">Projects & Practical Implementations</h2>
+          <p class="section-desc">
+            A showcase of application development, experimental AI pipelines, and foundational web projects.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="project-filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack & Flask</button>
+          <button class="filter-btn" data-filter="ai">AI & Automation</button>
+          <button class="filter-btn" data-filter="web">Web Practice</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: SHOPARK -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-card-header">
+              <span class="project-type-tag">Full-Stack E-Commerce</span>
+              <span class="project-status"><i class="fa-solid fa-gear fa-spin"></i> In Development</span>
+            </div>
+            <h3 class="project-title">SHOPARK</h3>
+            <h4 class="project-subtitle">Full-Stack E-Commerce Web Application</h4>
+            <p class="project-description">
+              A comprehensive e-commerce platform built to explore end-to-end full-stack architecture, database models, session management, and admin workflows.
+            </p>
+            <ul class="project-features">
+              <li><i class="fa-solid fa-circle-check"></i> Dynamic product management & catalog browsing.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Interactive shopping cart and checkout process.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Admin dashboard for inventory & order inspection.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Exploring user authentication and 3rd-party integrations.</li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/A500-DE" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: DEVFOLIO CMS -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-card-header">
+              <span class="project-type-tag">Web CMS System</span>
+              <span class="project-status"><i class="fa-solid fa-code-commit"></i> Active Project</span>
+            </div>
+            <h3 class="project-title">DEVFOLIO CMS</h3>
+            <h4 class="project-subtitle">Dynamic Content-Managed Developer Portfolio</h4>
+            <p class="project-description">
+              A dynamic developer portfolio application powered by Python and Flask, engineered to manage portfolio content, project listings, and profile data dynamically.
+            </p>
+            <ul class="project-features">
+              <li><i class="fa-solid fa-circle-check"></i> Dynamic Jinja2 templating with static asset orchestration.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Separation of presentation and dynamic data storage.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Planning and architecting a secure admin dashboard.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Custom route handlers and backend modular structure.</li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Jinja2</span>
+              <span class="tech-tag">HTML5/CSS3</span>
+              <span class="tech-tag">CMS Architecture</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/A500-DE" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: AI Shorts Generator -->
+          <div class="project-card" data-category="ai">
+            <div class="project-card-header">
+              <span class="project-type-tag">AI & Video Automation</span>
+              <span class="project-status"><i class="fa-solid fa-flask"></i> Experimental</span>
+            </div>
+            <h3 class="project-title">AI Shorts Generator</h3>
+            <h4 class="project-subtitle">Automated Intelligent Video Clipping Pipeline</h4>
+            <p class="project-description">
+              An advanced experimental pipeline that harnesses state-of-the-art AI speech models and computer vision tools to automatically generate short-form videos from long content.
+            </p>
+            <ul class="project-features">
+              <li><i class="fa-solid fa-circle-check"></i> Automated video clipping and timestamp extraction.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Audio transcription with OpenAI Whisper.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Frame rendering & media processing via FFmpeg & OpenCV.</li>
+              <li><i class="fa-solid fa-circle-check"></i> AI prompt analysis and smart summarization with Gemini API.</li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Whisper</span>
+              <span class="tech-tag">FFmpeg</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">Gemini API</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/A500-DE" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <i class="fa-brands fa-github"></i> View GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 4: HTML Practice Projects Series -->
+          <div class="project-card" data-category="web">
+            <div class="project-card-header">
+              <span class="project-type-tag">Web Foundations</span>
+              <span class="project-status"><i class="fa-solid fa-check"></i> 10 Projects Completed</span>
+            </div>
+            <h3 class="project-title">HTML Practice Projects</h3>
+            <h4 class="project-subtitle">Hands-On Web Architecture Exercises</h4>
+            <p class="project-description">
+              A curated collection of approximately 10 focused HTML and CSS projects crafted to master semantic document structure, layout mechanisms, and modern web styling.
+            </p>
+            <ul class="project-features">
+              <li><i class="fa-solid fa-circle-check"></i> Clean semantic HTML markup structure and accessibility.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Responsive layouts, navigation bars, and form designs.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Hands-on trial of CSS positioning, Flexbox, and styling.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Stepping stones toward interactive JavaScript applications.</li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Semantic Markup</span>
+              <span class="tech-tag">UI Practice</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/A500-DE" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <i class="fa-brands fa-github"></i> Repositories
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. EDUCATION & ACADEMIC MILESTONES
+         ====================================================================== -->
+    <section class="education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-book-open"></i> Academic Background</span>
+          <h2 class="section-title">Education & Milestones</h2>
+          <p class="section-desc">
+            Strong academic foundations driving disciplined problem-solving and software development capabilities.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1: BSc CS -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">Bachelor of Science in Computer Science (BSc CS)</h3>
+                <span class="timeline-badge">First Year &bull; Semester 1 Completed</span>
+              </div>
+              <div class="timeline-institute">
+                <i class="fa-solid fa-building-columns"></i> Bhavans College, Mumbai
+              </div>
+              <p class="timeline-desc">
+                Engaging in foundational computer science studies including programming algorithms, computational theory, operating systems, and practical laboratory exercises. Active in personal software experimentation alongside academic curriculum.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: HSC -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">Higher Secondary Certificate (HSC)</h3>
+                <span class="timeline-badge">Score: 72.5%</span>
+              </div>
+              <div class="timeline-institute">
+                <i class="fa-solid fa-flask"></i> Science Stream &mdash; PCMB (Physics, Chemistry, Maths, Biology)
+              </div>
+              <p class="timeline-desc">
+                Developed analytical thinking, mathematical problem-solving, and scientific rigor that form the backbone of algorithmic development and data science studies.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: SSC -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">Secondary School Certificate (SSC)</h3>
+                <span class="timeline-badge">Score: 90.5% (Distinction)</span>
+              </div>
+              <div class="timeline-institute">
+                <i class="fa-solid fa-school"></i> High School Foundations
+              </div>
+              <p class="timeline-desc">
+                Demonstrated high academic consistency, disciplined study habits, and strong foundational knowledge across mathematics and scientific subjects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. ROADMAP & VALUES SECTION
+         ====================================================================== -->
+    <section class="extra-section" id="roadmap">
+      <div class="container extra-grid">
+        <!-- Card 1: What I am Learning Next -->
+        <div class="extra-card">
+          <h3 class="extra-card-title">
+            <i class="fa-solid fa-bars-progress"></i> Learning Roadmap & Next Targets
+          </h3>
+          <p class="section-desc" style="margin-bottom: 1.25rem;">
+            A goal-driven developer roadmap tracking milestones achieved and upcoming technical milestones.
+          </p>
+
+          <div class="roadmap-list">
+            <div class="roadmap-item completed">
+              <div class="roadmap-check"><i class="fa-solid fa-check"></i></div>
+              <span class="roadmap-text">Python & C++ Programming Foundations</span>
+            </div>
+            <div class="roadmap-item completed">
+              <div class="roadmap-check"><i class="fa-solid fa-check"></i></div>
+              <span class="roadmap-text">HTML5 & CSS3 Responsive Layouts (~10 Projects)</span>
+            </div>
+            <div class="roadmap-item in-progress">
+              <div class="roadmap-check"><i class="fa-solid fa-spinner fa-spin"></i></div>
+              <span class="roadmap-text">Flask Backend Development & SQLite Database Modeling</span>
+            </div>
+            <div class="roadmap-item upcoming">
+              <div class="roadmap-check"><i class="fa-regular fa-clock"></i></div>
+              <span class="roadmap-text">JavaScript Mastery & Dynamic DOM Manipulation</span>
+            </div>
+            <div class="roadmap-item upcoming">
+              <div class="roadmap-check"><i class="fa-regular fa-clock"></i></div>
+              <span class="roadmap-text">SQL Relational Databases & Schema Optimization</span>
+            </div>
+            <div class="roadmap-item upcoming">
+              <div class="roadmap-check"><i class="fa-regular fa-clock"></i></div>
+              <span class="roadmap-text">REST APIs, Authentication & Production Deployment</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Values, Soft Skills & APJ Abdul Kalam Inspiration -->
+        <div class="extra-card">
+          <h3 class="extra-card-title">
+            <i class="fa-solid fa-seedling"></i> Values, Soft Skills & Inspiration
+          </h3>
+
+          <div class="values-tags">
+            <span class="value-pill"><i class="fa-solid fa-magnifying-glass"></i> Curiosity & Continuous Learning</span>
+            <span class="value-pill"><i class="fa-solid fa-people-group"></i> Teamwork & Collaboration</span>
+            <span class="value-pill"><i class="fa-solid fa-comments"></i> Communication & Spoken English</span>
+            <span class="value-pill"><i class="fa-solid fa-lightbulb"></i> Self-Learning & Experimentation</span>
+            <span class="value-pill"><i class="fa-solid fa-book-bookmark"></i> Universal Human Values (UHV)</span>
+            <span class="value-pill"><i class="fa-solid fa-dharmachakra"></i> Indian Knowledge Systems (IKS)</span>
+          </div>
+
+          <div class="kalam-tribute-box">
+            <div class="kalam-tribute-title">
+              <i class="fa-solid fa-award"></i> Inspired by Dr. A.P.J. Abdul Kalam
+            </div>
+            <p class="kalam-tribute-text">
+              I am deeply inspired by the life, vision, and humility of Dr. A.P.J. Abdul Kalam. His thoughts on education, scientific pursuit, youth empowerment, and purposeful national development guide my work ethic and commitment to self-growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. CONTACT & CONNECT SECTION
+         ====================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-regular fa-envelope"></i> Get In Touch</span>
+          <h2 class="section-title">Let's Connect & Collaborate</h2>
+          <p class="section-desc">
+            Interested in hiring an enthusiastic first-year intern, discussing a project, or talking technology? I'd love to hear from you.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Cards -->
+          <div class="contact-info-cards">
+            <!-- Email -->
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <div class="contact-label">Email Address</div>
+                <div class="contact-value">arjunkgupta277@gmail.com</div>
+              </div>
+              <button class="copy-btn" id="copy-email-btn" title="Copy Email to Clipboard">
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <!-- GitHub -->
+            <a href="https://github.com/A500-DE" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon-box">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="contact-details">
+                <div class="contact-label">GitHub</div>
+                <div class="contact-value">github.com/A500-DE</div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square" style="color: var(--text-muted);"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/arjun-gupta-72345241b/" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon-box">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="contact-details">
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-value">arjun-gupta-72345241b</div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square" style="color: var(--text-muted);"></i>
+            </a>
+
+            <!-- Location -->
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-details">
+                <div class="contact-label">Location</div>
+                <div class="contact-value">Mumbai, Maharashtra, India</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1.25rem;">Send a Quick Message</h3>
+            <form id="portfolio-contact-form">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <input type="text" id="form-name" class="form-control" placeholder="e.g. Recruiter / Collaborator" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Your Email</label>
+                <input type="email" id="form-email" class="form-control" placeholder="e.g. contact@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message</label>
+                <textarea id="form-message" class="form-control" placeholder="Write your message or internship inquiry..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i class="fa-regular fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       10. FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-brand">
+            Arjun<span class="gradient-text">.dev</span>
+          </div>
+          <p class="footer-quote">
+            "Learn continuously, build practically and improve consistently."
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year"></span> Arjun Gupta. Built for GitHub Pages.
+        </div>
+        <a href="#home" class="back-to-top">
+          Back to top <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Popup -->
+  <div class="toast-notice" id="toast-notice">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-message">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Custom Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
